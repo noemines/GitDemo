@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import com.sun.net.httpserver.Authenticator.Retry;
 
+import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
 import rahulshettyacademy.pageobjects.CartPage;
 import rahulshettyacademy.pageobjects.ProductCatalogue;
 import rahulshetyacademy.TestComponents.BaseTest;
@@ -20,7 +21,9 @@ public class ErrorValidationsTest extends BaseTest{
 		String productName = "ZARA COAT 3";
 		landingPage.loginApplication("nirr24@hotmail.com", "leamonir-A7");
 		Assert.assertEquals("Incorrect email  password.", landingPage.getErrorMessage());
-
+System.out.println("t3es");
+System.out.println("gfdghf");
+System.out.println("sgdsgvdsgv");
 	}
 	
 	@Test
